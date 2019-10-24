@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba53d16-b234-4114-afbb-bc3ec4b4eee0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler64/src/Euler64.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectEulers.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler10Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler1Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler2Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler3Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler4Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler5Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler6Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler7Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler8Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/Euler9Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/META-INF/ProjectEulers.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEulers/PalindromeResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler35/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Euler35/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Euler11.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Euler1.kt">
+        <entry file="file://$PROJECT_DIR$/src/Euler31.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="420">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -92,11 +89,11 @@
         <option value="$PROJECT_DIR$/.idea/Euler.iml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/Euler64/Euler64.iml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
     <option name="y" value="23" />
     <option name="width" value="748" />
     <option name="height" value="877" />
@@ -106,7 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,12 +120,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -194,10 +191,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="23" width="748" height="877" extended-state="0" />
+    <frame x="0" y="23" width="748" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21246459" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22946176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -245,17 +242,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Euler1.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Euler5.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Euler11.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -273,10 +270,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Euler1.kt">
+    <entry file="file://$PROJECT_DIR$/src/Euler11.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Euler31.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>
