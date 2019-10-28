@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3e1e38-a816-4722-bc5e-516c9de5ecb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Euler67/src/Euler67.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Euler68/Euler68.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Euler68/src/Euler68.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler65/out/production/Euler65/Euler65Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/out/production/Euler65/Euler65Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler65/src/Euler65.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/src/Euler65.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +18,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Euler64.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,9 +63,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="695" />
+    <option name="x" value="843" />
     <option name="y" value="23" />
-    <option name="width" value="745" />
+    <option name="width" value="597" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,7 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -79,8 +90,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,9 +147,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="695" y="23" width="745" height="877" extended-state="0" />
+    <frame x="843" y="23" width="597" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12732475" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12660028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -169,8 +182,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Euler64.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        <state relative-caret-position="80">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

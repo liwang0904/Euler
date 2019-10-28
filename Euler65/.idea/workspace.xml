@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c77407d-a862-4924-8175-7fdc82720ec0" name="Default Changelist" comment="Euler 65">
-      <change afterPath="$PROJECT_DIR$/../Euler67/src/Euler67.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler65/Euler65Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Euler65/Euler65Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Euler65.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Euler65.kt" afterDir="false" />
-    </list>
+    <list default="true" id="8c77407d-a862-4924-8175-7fdc82720ec0" name="Default Changelist" comment="Euler 65" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,6 +143,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="843" y="23" width="597" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24929178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
