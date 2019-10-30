@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3e1e38-a816-4722-bc5e-516c9de5ecb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Euler68/Euler68.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Euler68/src/Euler68.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler68/out/production/Euler68/Euler68Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler68/out/production/Euler68/Euler68Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler68/src/Euler68.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler68/src/Euler68.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/Euler64.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -183,7 +182,7 @@
     <entry file="file://$PROJECT_DIR$/src/Euler64.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
