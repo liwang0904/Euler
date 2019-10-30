@@ -15,14 +15,28 @@ fun main (args: Array<String>) {
     //printPermutn(string, "", permutations)
     //println(get_permutations(permutations))
     val list = mutableListOf(1, 2, 3, 4, 5, 6)
-    //val permList = permute(list)
+    val permList = permute(list)
+    //println(permList)
+    var solutions = mutableListOf<MutableList<Int>>()
     //println(get_solution_set(list))
-    var max = mutableListOf<Int>()
-    //for (perm in permList) {
-    //    println(get_solution_set(perm))
-    //}
-    println(divide_into_thirds(list))
-    println(get_solution_set1(divide_into_thirds(list)))
+    var max = 0.toLong()
+    for (perm in permList) {
+        if (is_solution_set(get_solution_set1(divide_into_thirds(perm))) && join_to_num(join(get_solution_set1(divide_into_thirds(perm)))) > max) {
+            max = join_to_num(join(get_solution_set1(divide_into_thirds(perm))))
+        }
+    }
+    //println(get_solution_set1(mutableListOf(mutableListOf(5, 3, 1), mutableListOf(6, 2, 4))))
+    println(max)
+    //println(divide_into_thirds(list))
+    //println(get_solution_set1(divide_into_thirds(list)))
+}
+
+fun join_to_num(list: MutableList<Int>): Long {
+    var num = ""
+    for (n in list) {
+        num += n.toString()
+    }
+    return num.toLong()
 }
 
 fun <Int> permute(list: List<Int>): List<List<Int>> {
@@ -55,7 +69,7 @@ fun get_possible_solution_set(perm: List<Int>): MutableList<Int> {
     val everyThird = get_every_third(perm)
     var i = 3
     while (i < perm.size) {
-        println(i)
+        //println(i)
         if ((i - 2) % 3 == 0) {
             val third = everyThird.get(0)
             //println(third)
@@ -70,29 +84,6 @@ fun get_possible_solution_set(perm: List<Int>): MutableList<Int> {
         //println(solutionSet)
     }
     solutionSet.add(oop)
-    return solutionSet
-}
-
-fun get_solution_set(perm: List<Int>): MutableList<Int> {
-    var solutionSet = mutableListOf(perm.get(0), perm.get(1), perm.get(2))
-    val everyThird = get_every_third(perm)
-    var i = 3
-    var size = perm.size
-    while (i < size - 4) {
-        println(i)
-        if (i % 3 == 0) {
-            solutionSet.add(perm.get(i))
-            solutionSet.add(everyThird.get(0))
-            //println(everyThird.get(0))
-            everyThird.removeAt(0)
-            size += 2
-        } else {
-            solutionSet.add(perm.get(i))
-        }
-        i++
-    }
-    solutionSet.add(everyThird.get(0))
-    solutionSet.add(perm.get(1))
     return solutionSet
 }
 
@@ -125,7 +116,7 @@ fun get_solution_set1(perm: MutableList<MutableList<Int>>): MutableList<MutableL
         }
     }
     var lastNums = get_every_third(list)
-    println(lastNums)
+    //println(lastNums)
     var i = 0
     while (i < perm.size - 1) {
         //var lastInList = perm.get(i).get(2)
@@ -136,7 +127,21 @@ fun get_solution_set1(perm: MutableList<MutableList<Int>>): MutableList<MutableL
     }
     solutionSet.get(solutionSet.size - 1).add(lastNums.get(0))
     solutionSet.get(solutionSet.size - 1).add(perm.get(0).get(1))
-    return solutionSet
+    var firstNums = mutableListOf<Int>()
+    var thirds = divide_into_thirds(join(solutionSet))
+    for (nums in thirds) {
+        firstNums.add(nums.get(0))
+    }
+    //println(thirds)
+    var k = 0
+    while (k < thirds.size) {
+        if (thirds.get(k).contains(firstNums.min())) {
+            thirds.add(0, thirds.get(k))
+            thirds.removeAt(k + 1)
+        }
+        k++
+    }
+    return thirds
 }
 
 fun join(perm: MutableList<MutableList<Int>>): MutableList<Int> {
@@ -151,9 +156,28 @@ fun join(perm: MutableList<MutableList<Int>>): MutableList<Int> {
 
 fun is_solution_set(solutionSet: MutableList<MutableList<Int>>): Boolean {
     var list = divide_into_thirds(join(solutionSet))
-    var sum = list.get(0).get(0) + list.get(0).get(1) + list.get(0).get(2)
+    var list1 = mutableListOf<Int>()
     for (nums in list) {
-        num
+        for (num in nums) {
+            list1.add(num)
+        }
+    }
+    var thirds = divide_into_thirds(list1.toList())
+    var sum = thirds.get(0).sum()
+    var count = 0
+    for (nums in thirds) {
+        //println(nums.sum())
+        if (sum == nums.sum()) {
+            count++
+        }
+    }
+    //println(thirds)
+    //println("count = $count")
+    //println("size = ${thirds.size}")
+    if (count == thirds.size) {
+        return true
+    } else {
+        return false
     }
 }
 
