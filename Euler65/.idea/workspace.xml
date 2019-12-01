@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c77407d-a862-4924-8175-7fdc82720ec0" name="Default Changelist" comment="Euler 65" />
+    <list default="true" id="8c77407d-a862-4924-8175-7fdc82720ec0" name="Default Changelist" comment="Euler 65">
+      <change afterPath="$PROJECT_DIR$/../Euler 74/src/Euler74.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler35/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler35/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Euler65.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="67" column="69" lean-forward="true" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+            <state relative-caret-position="543">
+              <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -181,8 +186,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Euler65.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="67" column="69" lean-forward="true" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+        <state relative-caret-position="543">
+          <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>

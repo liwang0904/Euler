@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba53d16-b234-4114-afbb-bc3ec4b4eee0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Euler65/src/Euler65.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Euler 74/src/Euler74.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler35/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Euler35/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler64/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Euler64/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Euler65/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler67/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Euler67/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Euler68/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Euler68/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/Euler31.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-end-line="39" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -252,7 +256,7 @@
     <entry file="file://$PROJECT_DIR$/src/Euler31.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
