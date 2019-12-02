@@ -13,8 +13,8 @@ fun main(args: Array<String>) {
             digitSum = get_digit_sum(power.toString())
             if (digitSum > maxDigitSum) {
                 maxDigitSum = digitSum
-                println("base = $base")
-                println("power = $power")
+//                println("base = $base")
+//                println("power = $power")
             }
         }
     }

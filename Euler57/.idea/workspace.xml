@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c77407d-a862-4924-8175-7fdc82720ec0" name="Default Changelist" comment="Euler 65">
-      <change afterPath="$PROJECT_DIR$/../Euler57/src/Euler57.kt" afterDir="false" />
+    <list default="true" id="ce7eaa54-7c8e-47b3-b9ae-e916a7c6d203" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Euler57.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/Euler.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler55/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler55/src/Euler55.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/src/Euler55.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,18 +19,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Euler65.kt">
+        <entry file="file://$PROJECT_DIR$/src/Euler57.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="43" selection-end-column="48" />
+            <state relative-caret-position="465">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="n#!!block;n#reduce#0" />
+                <element signature="n#!!block;n#inverse_of#0" />
               </folding>
             </state>
           </provider>
@@ -48,18 +45,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Long</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Euler65.kt" />
+        <option value="$PROJECT_DIR$/src/Euler57.kt" />
       </list>
     </option>
   </component>
@@ -71,8 +63,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="496" />
     <option name="y" value="23" />
-    <option name="width" value="597" />
+    <option name="width" value="944" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,30 +74,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Euler65" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Euler65" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Euler65" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Euler65" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Euler57" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Euler57" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Course" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -120,14 +106,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Euler65Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="Euler65" />
+    <configuration name="Euler57Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Euler57" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Euler65Kt" />
+      <option name="MAIN_CLASS_NAME" value="Euler57Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,7 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Euler65Kt" />
+        <item itemvalue="Kotlin.Euler57Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -144,58 +130,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8c77407d-a862-4924-8175-7fdc82720ec0" name="Default Changelist" comment="" />
-      <created>1571959592308</created>
+      <changelist id="ce7eaa54-7c8e-47b3-b9ae-e916a7c6d203" name="Default Changelist" comment="" />
+      <created>1575219411295</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571959592308</updated>
+      <updated>1575219411295</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="597" height="877" extended-state="0" />
+    <frame x="496" y="23" width="944" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24864864" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33630574" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299363" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Euler 65" />
-    <option name="LAST_COMMIT_MESSAGE" value="Euler 65" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Euler65.kt">
+    <entry file="file://$PROJECT_DIR$/src/Euler57.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="465">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="n#!!block;n#reduce#0" />
+            <element signature="n#!!block;n#inverse_of#0" />
           </folding>
         </state>
       </provider>

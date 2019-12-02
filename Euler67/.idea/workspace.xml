@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1ece573-0a1d-49c5-bd15-d00967ea0c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Euler 74/src/Euler74.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler35/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler35/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Euler57/src/Euler57.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Euler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler55/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler55/src/Euler55.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/src/Euler55.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

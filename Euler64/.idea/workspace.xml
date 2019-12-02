@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3e1e38-a816-4722-bc5e-516c9de5ecb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Euler 74/src/Euler74.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Euler57/src/Euler57.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Euler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler35/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler35/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler68/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +25,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Euler64.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="-117">
               <caret line="40" column="46" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="46" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -66,7 +66,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="843" />
+    <option name="x" value="418" />
     <option name="y" value="23" />
     <option name="width" value="597" />
     <option name="height" value="877" />
@@ -150,7 +150,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="843" y="23" width="597" height="877" extended-state="0" />
+    <frame x="418" y="23" width="597" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12660028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -184,7 +185,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Euler64.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="-117">
           <caret line="40" column="46" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="46" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
