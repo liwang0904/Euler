@@ -1,13 +1,8 @@
 import java.math.BigInteger
 
-class Counter {
-    count
-}
-
 fun main(args: Array<String>) {
     var count = 0
-    get_iteration_count(349.toBigInteger(), Cou)
-    println(count)
+    println(get_iteration_count(349.toBigInteger(), count))
 }
 
 fun is_palindrome(num: BigInteger): Boolean {
@@ -34,12 +29,31 @@ fun reverse_num(num: BigInteger): BigInteger {
     return reversed
 }
 
-fun get_iteration_count(num: BigInteger, iterationCount: Int) {
+fun get_iteration_count(num: BigInteger, iterationCount: Int): Int {
+    var count = iterationCount
+    //println(iterationCount)
     if (is_palindrome(num)) {
-        println(iterationCount)
-        return
+        //println("here! $iterationCount")
+        return count
     } else {
-        var reversed = reverse_num(num)
+        val reversed = reverse_num(num)
         get_iteration_count(reversed + num, iterationCount + 1)
     }
+    println(count)
+    return count
 }
+
+//fun get_iteration_count(num: BigInteger, iterationCount: Int): Int {
+//    while(true) {
+//        val reversed = reverse_num(num)
+//        println(num)
+//        if (is_palindrome(num)) {
+//            //println("here!!!!!")
+//            break
+//        } else {
+//            get_iteration_count(reversed + num, iterationCount + 1)
+//        }
+//    }
+//    println("out!!!!!    $iterationCount")
+//    return iterationCount
+//}
