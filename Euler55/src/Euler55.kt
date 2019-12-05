@@ -2,7 +2,16 @@ import java.math.BigInteger
 
 fun main(args: Array<String>) {
     var count = 0
-    println(get_iteration_count(349.toBigInteger(), count))
+    var i = 0
+    while (i < 10000) {
+        if (get_iteration_count(i.toBigInteger(), 0) == -1) {
+            //println(i)
+            count += 1
+        }
+        i++
+    }
+    println(count)
+    //println(get_iteration_count(199.toBigInteger(), 0))
 }
 
 fun is_palindrome(num: BigInteger): Boolean {
