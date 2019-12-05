@@ -29,31 +29,26 @@ fun reverse_num(num: BigInteger): BigInteger {
     return reversed
 }
 
-fun get_iteration_count(num: BigInteger, iterationCount: Int): Int {
-    var count = iterationCount
-    //println(iterationCount)
-    if (is_palindrome(num)) {
-        //println("here! $iterationCount")
-        return count
-    } else {
-        val reversed = reverse_num(num)
-        get_iteration_count(reversed + num, iterationCount + 1)
-    }
-    println(count)
-    return count
-}
-
 //fun get_iteration_count(num: BigInteger, iterationCount: Int): Int {
-//    while(true) {
+//    //println(iterationCount)
+//    if (is_palindrome(num)) {
+//        //println("here! $iterationCount")
+//        return iterationCount
+//    } else {
+//        println(iterationCount)
 //        val reversed = reverse_num(num)
-//        println(num)
-//        if (is_palindrome(num)) {
-//            //println("here!!!!!")
-//            break
-//        } else {
-//            get_iteration_count(reversed + num, iterationCount + 1)
-//        }
+//        get_iteration_count(reversed + num, iterationCount + 1)
 //    }
-//    println("out!!!!!    $iterationCount")
 //    return iterationCount
 //}
+
+fun get_iteration_count(num: BigInteger, iterationCount: Int): Int {
+    if (is_palindrome(num)) {
+        return iterationCount
+    }
+    if (iterationCount == 50) {
+        return -1
+    }
+    val reversed = reverse_num(num)
+    return get_iteration_count(num + reversed, iterationCount + 1)
+}
