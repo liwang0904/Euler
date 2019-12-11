@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1871241-b1ae-4fae-9ad3-bc0eff02e525" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Euler57/src/Euler57.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Euler.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Euler77/src/Euler77.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Euler55/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler55/src/Euler55.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/src/Euler55.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler56/src/Euler56.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler64/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler65/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler67/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Euler75/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler75/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Euler55/out/production/Euler55/Euler55Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Euler55/out/production/Euler55/Euler55Kt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,9 +77,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +136,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.101573676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10300429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
