@@ -1,29 +1,55 @@
-fun main(args: Array<String>) {
-    println(calculate())
-}
-private fun calculate(): Any {
-    return 999999.circularPrimesUnder()
+import java.util.ArrayList
+
+fun main() {
+    val list = primesList(1000000)
+    var circResult = 0
+    for (i in list.indices) {
+        val circ = circular(list[i])
+        if (containAllPrimes(circ, list))
+            circResult++
+    }
+
+    println(circResult)
 }
 
-private fun Int.circularPrimesUnder(): Int {
-    var count = 0
-    var circularPrimes = mutableListOf<Int>()
-}
-
-fun isPrime(num: Int): Boolean {
-    var i = 2
-    while (i <= num / 2) {
-        if (num % i == 0) {
-            return false
+fun primesList(n: Int): List<Int> {
+    val isP = BooleanArray(n + 1)
+    val res = ArrayList<Int>()
+    for (i in 2..n) {
+        isP[i] = true
+    }
+    var factor = 2
+    while (factor * factor <= n) {
+        if (isP[factor]) {
+            var j = factor
+            while (factor * j <= n) {
+                isP[factor * j] = false
+                j++
+            }
         }
-        ++i
+        factor++
+    }
+    for (k in 2..n)
+        if (isP[k])
+            res.add(k)
+    return res
+
+}
+
+fun circular(x: Int): IntArray {
+    val rev = x.toString()
+    val result = IntArray(rev.length)
+    result[0] = x
+    for (i in 1 until rev.length) {
+        result[i] = Integer.parseInt(rev.substring(i) + rev.substring(0, i))
+    }
+    return result
+}
+
+fun containAllPrimes(a: IntArray, lista: List<Int>): Boolean {
+    for (i in a.indices) {
+        if (!lista.contains(a[i]))
+            return false
     }
     return true
-}
-
-class Permutations {
-    fun swap(ch: List<Char>, i: Int, j: Int) {
-        var temp = ch.elementAt(i)
-        ch.elementAt(i) = (ch.elementAt(j)).also { ch.elementAt(j) = temp }
-    }
 }
