@@ -27,8 +27,22 @@ private class Card (val face: Char, val suit: Char): Comparable<Card> {
         }
         return -1
     }
+    
+    
 }
 
+class Hand{
+    //private sorted_cards()
+    //private is_flush() 
+    //private is_royal_flush()
+    //calculate_worth()     
+    //compareTo()
+}
+
+List<Card>  strs2cards(List<String> strs){
+    //List<Card>  call sort() on the list   
+}
+    
 fun main() {
     //println(getHands("src/poker.txt"))
     //println(orderHand(mutableListOf("8C", "KS", "KC", "9H", "4S")))
@@ -38,6 +52,8 @@ fun main() {
     //println(card1 > card2) // -1
 
     println(orderHand(mutableListOf("7S", "TH", "4H", "QS", "TD")))
+    
+    
 }
 
 fun getHands(file: String): MutableList<MutableList<String>> {
