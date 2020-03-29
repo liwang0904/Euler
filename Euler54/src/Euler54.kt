@@ -16,10 +16,28 @@ val HANDS = mutableListOf(
     "Royal Flush" // Ten, Jack, Queen, King, Ace, in same suit.
 )
 
+private class Card (val face: Char, val suit: Char): Comparable<Card> {
+    override fun compareTo(other: Card): Int {
+        val faceIndex = FACES.indexOf(face)
+        val otherIndex = FACES.indexOf(other.face)
+        if (faceIndex == otherIndex) {
+            return 0
+        } else if (faceIndex > otherIndex) {
+            return 1
+        }
+        return -1
+    }
+}
+
 fun main() {
     //println(getHands("src/poker.txt"))
-    println(orderHand(mutableListOf("8C", "KS", "KC", "9H", "4S")))
+    //println(orderHand(mutableListOf("8C", "KS", "KC", "9H", "4S")))
     //println(determineHand(mutableListOf("8C", "KS", "KC", "9H", "4S")))
+    //val card1 = Card('3', 'C')
+    //val card2 = Card('8', 'H')
+    //println(card1 > card2) // -1
+
+    println(orderHand(mutableListOf("7S", "TH", "4H", "QS", "TD")))
 }
 
 fun getHands(file: String): MutableList<MutableList<String>> {
@@ -35,24 +53,92 @@ fun getHands(file: String): MutableList<MutableList<String>> {
 }
 
 fun orderHand(cards: MutableList<String>): MutableList<String> {
-    var cards = cards
-    val cardsIndexes = mutableListOf<Int>()
+    println(cards)
     val orderedCards = mutableListOf<String>()
+    var other = ""
     for (card in cards) {
+        if (cards.indexOf(card) == 0) {
+            orderedCards.add(0, card)
+            continue
+        } else if (cards.indexOf(card) == cards.size - 1) {
+            other = cards[0]
+        } else {
+            other = cards[(cards.indexOf(card) - 1)]
+        }
+        println("comparing $card and $other")
+
         val array = card.toCharArray()
         val face = array[0]
-        cardsIndexes.add(FACES.indexOf(face))
-    }
-    cardsIndexes.sort()
+        val suit = array[1]
 
-    var possibleCardIndexes = mutableListOf<Int>()
-    for (card in cards) {
-        val array = card.toCharArray()
-        val face = array[0]
-        possibleCardIndexes.add(FACES.indexOf(face))
-    }
+        val otherArray = other.toCharArray()
+        val otherFace = otherArray[0]
+        val otherSuit = otherArray[1]
 
-    println(cards.shuffle())
+        val card1 = Card(face, suit)
+        val card2 = Card(otherFace, otherSuit)
+
+        val otherIndex = orderedCards.indexOf(other)
+
+        if (card1 < card2) {
+            println("$card < $other")
+            
+            //orderedCards.add(otherIndex, card)
+            println(orderedCards)
+        } else {
+            println("$card >= $other")
+            orderedCards.add(otherIndex + 1, card)
+            println(orderedCards)
+        }
+
+        /*if (card1.compareTo(card2) == -1) { // card < other
+            println("$card < $other")
+            if (otherIndex == 0) {
+                orderedCards.add(otherIndex, card)
+            } else {
+                var possibleOther = orderedCards[otherIndex - 1]
+                var possibleOtherArray = possibleOther.toCharArray()
+                var possibleFace = possibleOtherArray[0]
+                var possibleSuit = possibleOtherArray[1]
+                var possibleCard = Card(possibleFace, possibleSuit)
+                println(orderedCards.indexOf(possibleOther))
+                while (possibleCard >= card1 && orderedCards.indexOf(possibleOther) != 0) {
+                    println("$possibleOther > $card")
+                    possibleOther = orderedCards[orderedCards.indexOf(possibleOther) - 1]
+                    println("card: $card and possible: $possibleOther")
+                    possibleOtherArray = possibleOther.toCharArray()
+                    possibleFace = possibleOtherArray[0]
+                    possibleSuit = possibleOtherArray[1]
+                    possibleCard = Card(possibleFace, possibleSuit)
+                }
+                orderedCards.add(orderedCards.indexOf(possibleOther), card)
+            }
+        } else { // card >= other
+            println("$card >= $other")
+            if (otherIndex == orderedCards.size - 1) {
+                orderedCards.add(otherIndex + 1, card)
+            } else {
+                var possibleOther = orderedCards[otherIndex + 1]
+                var possibleOtherArray = possibleOther.toCharArray()
+                var possibleFace = possibleOtherArray[0]
+                var possibleSuit = possibleOtherArray[1]
+                var possibleCard = Card(possibleFace, possibleSuit)
+                //println(orderedCards.indexOf(possibleOther) == orderedCards.size - 1)
+                while (possibleCard <= card1 && orderedCards.indexOf(possibleOther) != orderedCards.size - 1) {
+                    possibleOther = orderedCards[orderedCards.indexOf(possibleOther) + 1]
+                    println("card: $card and possible: $possibleOther")
+                    possibleOtherArray = possibleOther.toCharArray()
+                    possibleFace = possibleOtherArray[0]
+                    possibleSuit = possibleOtherArray[1]
+                    possibleCard = Card(possibleFace, possibleSuit)
+                }
+                println("last: $possibleOther")
+                orderedCards.add(orderedCards.indexOf(possibleOther), card)
+            }
+        }
+        println(orderedCards)
+    }*/
+    }
 
     return orderedCards
 }
