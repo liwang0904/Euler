@@ -17,11 +17,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+            <state relative-caret-position="169">
+              <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
               <folding>
-                <element signature="n#!!block;n#getHands#0" />
-                <element signature="e#2748#5327#0" />
+                <element signature="n#!!block;n#Card#0" />
+                <element signature="n#!!block;n#getTwoPairs#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getThreeOfAKind#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getStraight#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getFlush#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getFullHouse#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getFourOfAKind#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getStraightFlush#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#isRoyalFlush#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#stringToCard#0" />
               </folding>
             </state>
           </provider>
@@ -30,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/poker.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="631" column="15" lean-forward="true" selection-start-line="631" selection-start-column="15" selection-end-line="631" selection-end-column="29" />
+            <state relative-caret-position="269">
+              <caret line="879" column="29" lean-forward="true" selection-start-line="879" selection-start-column="15" selection-end-line="879" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -62,9 +70,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="38" />
+    <option name="x" value="85" />
     <option name="y" value="23" />
-    <option name="width" value="1402" />
+    <option name="width" value="1355" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -191,18 +199,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/poker.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="631" column="15" lean-forward="true" selection-start-line="631" selection-start-column="15" selection-end-line="631" selection-end-column="29" />
+        <state relative-caret-position="269">
+          <caret line="879" column="29" lean-forward="true" selection-start-line="879" selection-start-column="15" selection-end-line="879" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+        <state relative-caret-position="169">
+          <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
           <folding>
-            <element signature="n#!!block;n#getHands#0" />
-            <element signature="e#2748#5327#0" />
+            <element signature="n#!!block;n#Card#0" />
+            <element signature="n#!!block;n#getTwoPairs#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getThreeOfAKind#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getStraight#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getFlush#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getFullHouse#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getFourOfAKind#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getStraightFlush#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#isRoyalFlush#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#stringToCard#0" />
           </folding>
         </state>
       </provider>
