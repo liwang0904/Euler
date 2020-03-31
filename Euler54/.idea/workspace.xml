@@ -17,20 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="355" column="33" selection-start-line="355" selection-start-column="33" selection-end-line="355" selection-end-column="33" />
-              <folding>
-                <element signature="n#!!block;n#groupFacesAndSuits#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getHighCard#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getOnePair#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#stringToCard#0" />
-                <element signature="n#!!block;n#stringToCard#0" />
-                <element signature="n#!!block;n#getHands#0" />
-                <element signature="e#8424#8522#1" />
-                <element signature="e#8591#8689#1" />
-                <element signature="e#9393#9491#1" />
-                <element signature="e#9560#9658#1" />
-              </folding>
+            <state relative-caret-position="-5264">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -216,20 +204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="355" column="33" selection-start-line="355" selection-start-column="33" selection-end-line="355" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!block;n#groupFacesAndSuits#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getHighCard#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getOnePair#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#stringToCard#0" />
-            <element signature="n#!!block;n#stringToCard#0" />
-            <element signature="n#!!block;n#getHands#0" />
-            <element signature="e#8424#8522#1" />
-            <element signature="e#8591#8689#1" />
-            <element signature="e#9393#9491#1" />
-            <element signature="e#9560#9658#1" />
-          </folding>
+        <state relative-caret-position="-5264">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
