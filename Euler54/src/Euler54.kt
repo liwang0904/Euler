@@ -42,47 +42,64 @@ class Hand(cards: List<Card>) {
         }
     }
 
-    fun getHighCard(): Char { // if the same...compare second highest
-        return sortedCards.last().face
+    fun getHighCard(): Card { // if the same...compare second highest
+        return sortedCards.last()
     }
 
-    fun getOnePair(): Char { // if the same...highest of remaining three
-        var pairValue = ' '
+    fun getOnePair(): List<Card> { // if the same...highest of remaining three
+        var pair = mutableListOf<Card>()
         groupFacesAndSuits()
         for (face in faces) {
             if (faces.count { it == face } != 2) {
                 continue
             } else {
-                pairValue = face
+                for (card in sortedCards) {
+                    if (card.face == face) {
+                        pair.add(card)
+                    }
+                }
             }
         }
-        return pairValue // make sure is not ' '
+        return pair.distinct() // make sure is not ' '
     }
 
-    fun getTwoPairs(): List<Char> { // highest pair determines winner / if same two pairs...compare 5th card
-        var pairsValue = mutableListOf<Char>()
+    fun getTwoPairs(): List<List<Card>> { // highest pair determines winner / if same two pairs...compare 5th card
+        val pairs = mutableListOf<MutableList<Card>>()
+        val cards = mutableListOf<Card>()
         groupFacesAndSuits()
-        for (face in faces) {
-            if (faces.count { it == face } != 2) {
+
+        for (card in sortedCards) {
+            if (faces.count { it == card.face } != 2) {
                 continue
             } else {
-                pairsValue.add(face)
+                cards.add(card)
             }
         }
-        return pairsValue.distinct().sortedDescending() // make sure size is two
+        cards.sorted()
+        if (cards.size == 4) {
+            val pair1 = mutableListOf(cards[0], cards[1])
+            val pair2 = mutableListOf(cards[2], cards[3])
+            pairs.add(pair1)
+            pairs.add(pair2)
+        }
+        return pairs.reversed() // make sure size is two
     }
 
-    fun getThreeOfAKind(): Char { // if the same...compare last two
-        var tripletValue = ' '
+    fun getThreeOfAKind(): List<Card> { // if the same...compare last two
+        var triplet = mutableListOf<Card>()
         groupFacesAndSuits()
         for (face in faces) {
             if (faces.count { it == face } != 3) {
                 continue
             } else {
-                tripletValue = face
+                for (card in sortedCards) {
+                    if (card.face == face) {
+                        triplet.add(card)
+                    }
+                }
             }
         }
-        return tripletValue // make sure is not ' '
+        return triplet // make sure is not ' '
     }
 
     fun getStraight(): List<Char> { // no kickers
@@ -105,7 +122,7 @@ class Hand(cards: List<Card>) {
         return ' '
     }
 
-    fun getFullHouse(): List<Char> { // if both have...compare three of a kind then pair
+    fun getFullHouse(): List<List<Card>> { // if both have...compare three of a kind then pair
         val threeOfAKind = Hand(sortedCards).getThreeOfAKind()
         val pair = Hand(sortedCards).getOnePair()
         return listOf(threeOfAKind, pair)
@@ -148,33 +165,46 @@ class Hand(cards: List<Card>) {
         if (Hand(sortedCards).isRoyalFlush()) {
             return "Royal Flush"
         } else if (Hand(sortedCards).getStraightFlush().isNotEmpty()) {
-            return "Straight Flush-${Hand(sortedCards).getStraightFlush()}"
+            return "Straight Flush"
         } else if (Hand(sortedCards).getFourOfAKind() != ' ') {
-            return "Four of a Kind-${Hand(sortedCards).getFourOfAKind()}"
-        } else if (Hand(sortedCards).getFullHouse()[0].isLetterOrDigit() && Hand(sortedCards).getFullHouse()[1].isLetterOrDigit()) {
-            return "Full House-${Hand(sortedCards).getFullHouse()}"
+            return "Four of a Kind"
+        } else if (Hand(sortedCards).getFullHouse()[0].size == 3 && Hand(sortedCards).getFullHouse()[1].size == 2) {
+            return "Full House"
         } else if (Hand(sortedCards).getFlush() != ' ') {
-            return "Flush-${Hand(sortedCards).getFlush()}"
+            return "Flush"
         } else if (Hand(sortedCards).getStraight().isNotEmpty()) {
-            return "Straight-${Hand(sortedCards).getStraight()}"
-        } else if (Hand(sortedCards).getThreeOfAKind() != ' ') {
-            return "Three of a Kind-${Hand(sortedCards).getThreeOfAKind()}"
+            return "Straight"
+        } else if (Hand(sortedCards).getThreeOfAKind().size == 3) {
+            return "Three of a Kind"
         } else if (Hand(sortedCards).getTwoPairs().size == 2) {
-            return "Two Pairs-${Hand(sortedCards).getTwoPairs()}"
-        } else if (Hand(sortedCards).getOnePair() != ' ') {
-            return "One Pair-${Hand(sortedCards).getOnePair()}"
+            return "Two Pairs"
+        } else if (Hand(sortedCards).getOnePair().size == 2) {
+            return "One Pair"
         }
-        return "High Card-$highestCard"
+        return "High Card"
     }
 }
 
-fun stringToCard(strings: MutableList<String>): MutableList<Card> {
+fun stringsToCards(strings: MutableList<String>): MutableList<Card> {
     var list = mutableListOf<Card>()
     for (string in strings) {
         val card = Card(string.toCharArray()[0], string.toCharArray()[1])
         list.add(card)
     }
     return list
+}
+
+fun stringToCard(string: String): Card {
+    return Card(string.toCharArray()[0], string.toCharArray()[1])
+}
+
+fun cardsToStrings(cards: List<Card>): MutableList<String> {
+    val strings = mutableListOf<String>()
+    for (card in cards) {
+        val string = card.face.plus("").plus(card.suit)
+        strings.add(string)
+    }
+    return strings
 }
 
 fun main() {
@@ -192,7 +222,8 @@ fun main() {
 //    }
 //    println(strings)
 
-    val cards = stringToCard(mutableListOf("QH", "QC", "JS", "3D", "3C"))
+    val cards = stringsToCards(mutableListOf("TS", "TH", "3C", "AD", "QS"))
+    //println(cardsToStrings(cards))
     val highCard = Hand(cards).getHighCard()
     val onePair = Hand(cards).getOnePair()
     val twoPairs = Hand(cards).getTwoPairs()
@@ -204,17 +235,151 @@ fun main() {
     val straightFlush = Hand(cards).getStraightFlush()
     val isRoyalFlush = Hand(cards).isRoyalFlush()
 
-    println(Hand(cards).determineHighestHand())
+//    println(cardsToStrings(twoPairs[0]))
+//    println(cardsToStrings(twoPairs[1]))
+    //println(Hand(cards).determineHighestHand())
+
+    //println(highCardCheck(mutableListOf(stringsToCards(mutableListOf("3C", "AD", "QS")), stringsToCards(mutableListOf("AS", "KC", "3D")))))
+
+    println(determineWinner(mutableListOf(stringsToCards(mutableListOf("TS", "TH", "2C", "2D", "QS")), stringsToCards(mutableListOf("TS", "TC", "2C", "2D", "JD")))))
 }
 
-fun getHands(file: String): MutableList<MutableList<String>> {
-    val hands = mutableListOf<MutableList<String>>()
+fun getHands(file: String): MutableList<MutableList<MutableList<Card>>> {
+    val hands = mutableListOf<MutableList<MutableList<Card>>>()
     File(file).forEachLine {
         val line = it.split(" ").toMutableList()
-        val player1 = mutableListOf(line[0], line[1], line[2], line[3], line[4])
-        val player2 = mutableListOf(line[5], line[6], line[7], line[8], line[9])
-        hands.add(player1)
-        hands.add(player2)
+        val player1 = stringsToCards(mutableListOf(line[0], line[1], line[2], line[3], line[4]))
+        val player2 = stringsToCards(mutableListOf(line[5], line[6], line[7], line[8], line[9]))
+        hands.add(mutableListOf(player1, player2))
     }
     return hands
+}
+
+fun highCardCheck(round: MutableList<MutableList<Card>>): Int {
+    if (round[0].size == 0 || round[1].size == 0) {
+        println(round[0].size)
+        return 0
+    }
+    val highCard1 = Hand(round[0]).getHighCard()
+    val highCard2 = Hand(round[1]).getHighCard()
+    if (highCard1 > highCard2) {
+        return 1
+    } else if (highCard1 < highCard2) {
+        return 2
+    }
+    var newHand1 = mutableListOf<Card>()
+    for (card in round[0]) {
+        if (card == highCard1) {
+            continue
+        }
+        newHand1.add(card)
+    }
+    var newHand2 = mutableListOf<Card>()
+    for (card in round[1]) {
+        if (card == highCard2) {
+            continue
+        }
+        newHand2.add(card)
+    }
+    return highCardCheck(mutableListOf(newHand1, newHand2))
+}
+
+fun onePairCheck(round: MutableList<MutableList<Card>>): Int {
+    val pair1 = Hand(round[0]).getOnePair()
+    val pair2 = Hand(round[1]).getOnePair()
+    if (pair1[0].face > pair1[1].face) {
+        return 1
+    } else if (pair1[0].face < pair1[1].face) {
+        return 2
+    }
+    val newHand1 = mutableListOf<Card>()
+    for (card in round[0]) {
+        if (pair1.contains(card)) {
+            continue
+        }
+        newHand1.add(card)
+    }
+    val newHand2 = mutableListOf<Card>()
+    for (card in round[1]) {
+        if (pair2.contains(card)) {
+            continue
+        }
+        newHand2.add(card)
+    }
+    return highCardCheck(mutableListOf(newHand1, newHand2))
+}
+
+fun twoPairsCheck(round: MutableList<MutableList<Card>>): Int {
+    val pairs1 = Hand(round[0]).getTwoPairs()
+    val pairs2 = Hand(round[1]).getTwoPairs()
+    /*var list1 = mutableListOf<Card>()
+    for (pair in pairs1) {
+        for (card in pair) {
+            list1.add(card)
+        }
+    }
+    var list2 = mutableListOf<Card>()
+    for (pair in pairs2) {
+        for (card in pair) {
+            list2.add(card)
+        }
+    }
+    println(cardsToStrings(list1))
+    println(cardsToStrings(list2))*/
+    var i = 0
+    while (i <= 1) {
+        val pair1 = pairs1[i]
+        val pair2 = pairs2[i]
+        if (pair1[0].face > pair2[0].face) {
+            return 1
+        } else if (pair1[0].face < pair2[0].face) {
+            return 2
+        }
+        i++
+        continue
+    }
+    var kicker1 = pairs1[0][0]
+    for (card in round[0]) {
+        for (pair in pairs1) {
+            if (card.face == pair[0].face) {
+                continue
+            }
+            kicker1 = card
+            break
+        }
+    }
+    var kicker2 = pairs2[0][0]
+    for (card in round[1]) {
+        for (pair in pairs2) {
+            if (card.face == pair[0].face) {
+                continue
+            }
+            kicker2 = card
+            break
+        }
+    }
+
+    println(cardsToStrings(mutableListOf(kicker1)))
+    println(cardsToStrings(mutableListOf(kicker2)))
+    return highCardCheck(mutableListOf(mutableListOf(kicker1), mutableListOf(kicker2)))
+}
+
+fun determineWinner(round: MutableList<MutableList<Card>>): Int {
+    println("Player 1: ${round[0]}")
+    println("Player 2: ${round[1]}")
+    var winner = 0
+    val hand1 = Hand(round[0]).determineHighestHand()
+    val hand2 = Hand(round[1]).determineHighestHand()
+    println(hand1)
+    println(hand2)
+    if (hand1 == hand2) {
+        if (hand1 == "High Card") {
+            winner = highCardCheck(round)
+        } else if (hand1 == "One Pair") {
+            winner = onePairCheck(round)
+        } else if (hand1 == "Two Pairs") {
+            winner = twoPairsCheck(round)
+        }
+    }
+    return winner
 }

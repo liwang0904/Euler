@@ -17,19 +17,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
+            <state relative-caret-position="288">
+              <caret line="355" column="33" selection-start-line="355" selection-start-column="33" selection-end-line="355" selection-end-column="33" />
               <folding>
-                <element signature="n#!!block;n#Card#0" />
-                <element signature="n#!!block;n#getTwoPairs#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getThreeOfAKind#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getStraight#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getFlush#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getFullHouse#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getFourOfAKind#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#getStraightFlush#0;n#!!block;n#Hand#0" />
-                <element signature="n#!!block;n#isRoyalFlush#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#groupFacesAndSuits#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getHighCard#0;n#!!block;n#Hand#0" />
+                <element signature="n#!!block;n#getOnePair#0;n#!!block;n#Hand#0" />
                 <element signature="n#!!block;n#stringToCard#0" />
+                <element signature="n#!!block;n#stringToCard#0" />
+                <element signature="n#!!block;n#getHands#0" />
+                <element signature="e#8424#8522#1" />
+                <element signature="e#8591#8689#1" />
+                <element signature="e#9393#9491#1" />
+                <element signature="e#9560#9658#1" />
               </folding>
             </state>
           </provider>
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/poker.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="879" column="29" lean-forward="true" selection-start-line="879" selection-start-column="15" selection-end-line="879" selection-end-column="29" />
+            <state relative-caret-position="215">
+              <caret line="679" column="15" lean-forward="true" selection-start-line="679" selection-start-column="15" selection-end-line="679" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -57,6 +57,9 @@
     <findStrings>
       <find>println</find>
       <find>orderedCards</find>
+      <find>stringToCard</find>
+      <find>1c</find>
+      <find>return 0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,9 +73,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
+    <option name="x" value="16" />
     <option name="y" value="23" />
-    <option name="width" value="1355" />
+    <option name="width" value="1424" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -199,26 +202,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/poker.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="879" column="29" lean-forward="true" selection-start-line="879" selection-start-column="15" selection-end-line="879" selection-end-column="29" />
+        <state relative-caret-position="215">
+          <caret line="679" column="15" lean-forward="true" selection-start-line="679" selection-start-column="15" selection-end-line="679" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="652" column="18" selection-start-line="652" selection-start-column="18" selection-end-line="652" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
+        <state relative-caret-position="288">
+          <caret line="355" column="33" selection-start-line="355" selection-start-column="33" selection-end-line="355" selection-end-column="33" />
           <folding>
-            <element signature="n#!!block;n#Card#0" />
-            <element signature="n#!!block;n#getTwoPairs#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getThreeOfAKind#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getStraight#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getFlush#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getFullHouse#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getFourOfAKind#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#getStraightFlush#0;n#!!block;n#Hand#0" />
-            <element signature="n#!!block;n#isRoyalFlush#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#groupFacesAndSuits#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getHighCard#0;n#!!block;n#Hand#0" />
+            <element signature="n#!!block;n#getOnePair#0;n#!!block;n#Hand#0" />
             <element signature="n#!!block;n#stringToCard#0" />
+            <element signature="n#!!block;n#stringToCard#0" />
+            <element signature="n#!!block;n#getHands#0" />
+            <element signature="e#8424#8522#1" />
+            <element signature="e#8591#8689#1" />
+            <element signature="e#9393#9491#1" />
+            <element signature="e#9560#9658#1" />
           </folding>
         </state>
       </provider>
