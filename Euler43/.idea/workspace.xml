@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bf2034c-fd2c-4b98-abc5-5d3399150549" name="Default Changelist" comment="" />
+    <list default="true" id="61c0dec3-efa4-4f80-839a-e5d3a35fb514" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,23 +15,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
+        <entry file="file://$PROJECT_DIR$/src/Euler43.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1208">
-              <caret line="201" column="7" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="7" />
-              <folding>
-                <element signature="e#14625#14717#1" />
-                <element signature="e#14807#14921#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/poker.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="679" column="15" lean-forward="true" selection-start-line="679" selection-start-column="15" selection-end-line="679" selection-end-column="29" />
+            <state relative-caret-position="293">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -45,23 +32,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>println</find>
-      <find>orderedCards</find>
-      <find>stringToCard</find>
-      <find>1c</find>
-      <find>return 0</find>
-      <find>[0].face</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Euler54.kt" />
+        <option value="$PROJECT_DIR$/src/Euler43.kt" />
       </list>
     </option>
   </component>
@@ -77,18 +54,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Euler54" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Euler54" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Euler54" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Euler54" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Euler43" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Euler43" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -96,16 +67,12 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -120,14 +87,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Euler54Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="Euler54" />
+    <configuration name="Euler43Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Euler43" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Euler54Kt" />
+      <option name="MAIN_CLASS_NAME" value="Euler43Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,7 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Euler54Kt" />
+        <item itemvalue="Kotlin.Euler43Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -144,24 +111,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6bf2034c-fd2c-4b98-abc5-5d3399150549" name="Default Changelist" comment="" />
-      <created>1585430515485</created>
+      <changelist id="61c0dec3-efa4-4f80-839a-e5d3a35fb514" name="Default Changelist" comment="" />
+      <created>1585864163081</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585430515485</updated>
+      <updated>1585864163081</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="622" y="23" width="818" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24892704" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Educational.CheckDetails" />
       <window_info anchor="bottom" id="Version Control" />
@@ -170,51 +136,26 @@
       <window_info anchor="bottom" id="Messages" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Euler82/src/Euler82.kt">
+    <entry file="file://$PROJECT_DIR$/src/Euler43.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/poker.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="679" column="15" lean-forward="true" selection-start-line="679" selection-start-column="15" selection-end-line="679" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="652" column="18" selection-start-line="652" selection-start-column="18" selection-end-line="652" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Euler54.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1208">
-          <caret line="201" column="7" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="7" />
-          <folding>
-            <element signature="e#14625#14717#1" />
-            <element signature="e#14807#14921#1" />
-          </folding>
+        <state relative-caret-position="293">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="67" />
         </state>
       </provider>
     </entry>
