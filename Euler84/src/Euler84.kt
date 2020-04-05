@@ -1,4 +1,3 @@
-import java.util.*
 import kotlin.random.Random
 
 val SQUARES = mutableListOf(
@@ -87,15 +86,13 @@ fun main() {
 //    println(moveCommunityChest(11))
     //println(moveChance(11))
     //println(mostCommonElements(mutableListOf(1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 4, 4, 6)))
-    println(simulate(10))
+    println(simulate(1000000))
 }
 
-fun rollDice(curr_pos: Int): Int {
+fun rollDice(): MutableList<Int> {
     val dice1 = Random.nextInt(1, 5)
     val dice2 = Random.nextInt(1, 5)
-    println("dice1: $dice1")
-    println("dice2: $dice2")
-    return curr_pos + dice1 + dice2
+    return mutableListOf(dice1, dice2)
 }
 
 fun moveCommunityChest(curr_pos: Int, card: String): Int {
@@ -117,6 +114,13 @@ fun moveChance(curr_pos: Int, card: String): Int {
     }
     val curr_square = SQUARES.get(curr_pos)
     var square = SQUARES.indexOf(curr_square)
+    if (SQUARES.get(square) == "CH3") {
+        if (card == "R") {
+            return 5
+        } else if (card == "U") {
+            return 12
+        }
+    }
     while (square <= 39) {
         square++
         if (card == "R" && SQUARES.get(square).toCharArray()[0] == 'R') {
@@ -129,19 +133,60 @@ fun moveChance(curr_pos: Int, card: String): Int {
 }
 
 fun simulate(rolls: Int): MutableList<Int> {
-    var most_common_cards = mutableListOf<String>()
     var list = mutableListOf<Int>()
-    val community_chest = COMMUNITY_CHEST_DECK.shuffled().toMutableList()
+    var community_chest = COMMUNITY_CHEST_DECK.shuffled().toMutableList()
+    //println("COMMUNITY CHEST: $community_chest")
     val chance = CHANCE_DECK.shuffled().toMutableList()
+    //println("CHANCE: $chance")
     var i = 0
     var curr_pos = 0
+    var doubles_count = 0
     while (i <= rolls) {
-        var next_square = rollDice(curr_pos)
-        println(next_square)
+        val dice = rollDice()
+        val dice1 = dice[0]
+        val dice2 = dice[1]
+        //println("DICE 1: $dice1")
+        //println("DICE 2: $dice2")
+        val next_square = curr_pos + dice1 + dice2
         curr_pos = next_square
+        if (curr_pos >= 40) {
+            curr_pos = curr_pos - 40
+            //println("CURRENT POSITION: $curr_pos")
+        }
+        if (curr_pos == 30) {
+            curr_pos = 10
+        }
+        if (dice1 == dice2) {
+            doubles_count++
+            //println("DOUBLES COUNT: $doubles_count")
+            if (doubles_count == 3) {
+                curr_pos = SQUARES.indexOf("JAIL")
+                doubles_count = 0
+            }
+        } else if (SQUARES[curr_pos].toCharArray()[1] == 'C') { // community chest
+            //println("COMMUNITY CHEST")
+            curr_pos = moveCommunityChest(curr_pos, community_chest[0])
+            community_chest.add(community_chest.size, community_chest[0])
+            community_chest.removeAt(0)
+            //println(community_chest)
+        } else if (SQUARES[(curr_pos)].toCharArray()[1] == 'H') { // chance
+            //println("CHANCE")
+            curr_pos = moveChance(curr_pos, chance[0])
+//            if (chance[0] == "E3") {
+//                println("***********************E3***********************")
+//            }
+            chance.add(chance.size, chance[0])
+            chance.removeAt(0)
+            //println(chance)
+        }
+        list.add(curr_pos)
+        println(curr_pos)
         i++
     }
-    return list
+    //println(list)
+    println(list.count { it == 34 })
+    println(list.count { it == 16 })
+    return mostCommonElements(list)
 }
 
 fun mostCommonElements(list: MutableList<Int>): MutableList<Int> {
