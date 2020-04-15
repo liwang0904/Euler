@@ -1,38 +1,24 @@
 fun main() {
-    println(is_prime(58))
-    val list = get_primes(100000)
-    println(list)
-    var sum = 0
-    var max = 0
-    for (num in list) {
-        sum += num
-        println(sum)
-        println(sum < 1000000)
-        if (is_prime(sum) && sum < 1000000 && sum + list.get(list.indexOf(num) + 1) > 1000000) {
-            println(sum)
-            break
+    val MAX_SUM = 1000000
+    var currentSum = 0
+    var currentNumber = 6
+
+    while (currentSum + currentNumber < MAX_SUM) {
+        if (isPrime(currentNumber)) {
+            currentSum += currentNumber
         }
-        max = sum
+        currentNumber++
     }
+    println(currentSum)
 }
 
-fun is_prime(num: Int): Boolean {
-    for (i in 2..num / 2) {
-        if (num % i == 0) {
+fun isPrime(n: Int): Boolean {
+    var i = 2
+    while (i <= Math.sqrt(n.toDouble())) {
+        if (n % i == 0 && n != i) {
             return false
         }
+        i++
     }
     return true
-}
-
-fun get_primes(max: Int): MutableList<Int> {
-    val list = mutableListOf<Int>()
-    var num = 2
-    while (num <= max) {
-        if (is_prime(num)) {
-            list.add(num)
-        }
-        num++
-    }
-    return list
 }
