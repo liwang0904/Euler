@@ -27,19 +27,29 @@ class Fraction(val numerator: Int, val denominator: Int): Comparable<Fraction> {
 }
 
 fun main() {
-    val fraction = Fraction(16, 10)
-    val other = Fraction(8, 5)
-    println("numerator: ${fraction.numerator}")
-    println("denominator: ${fraction.denominator}")
-    println(fraction.compareTo(other))
+//    val fraction = Fraction(16, 10)
+//    val other = Fraction(8, 5)
+//    println("numerator: ${fraction.numerator}")
+//    println("denominator: ${fraction.denominator}")
+//    println(fraction.compareTo(other))
+    val fractions = mutableListOf<MutableList<Int>>()
+    for (fraction in allFractions(1000000).distinct()) {
+        fractions.add(mutableListOf(fraction.numerator, fraction.denominator))
+    }
+    println(fractions.distinct().size)
 }
 
-fun allFractions(max_denominator: Int): MutableList<Fraction> {
+fun allFractions(max_denominator: Int): List<Fraction> {
+    val allFractions = mutableListOf<Fraction>()
     for (denominator in 2..max_denominator) {
-        for (numerator in 1..denominator) {
-
+        println(denominator)
+        for (numerator in 1..denominator - 1) {
+            allFractions.add(Fraction(numerator, denominator).reduce())
+//            println("n = $numerator")
+//            println("d = $denominator")
         }
     }
+    return allFractions.sorted()
 }
 
 fun get_primes(limit: Int): MutableList<Int> {
