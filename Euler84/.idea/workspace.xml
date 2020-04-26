@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Euler84.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="155" column="26" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="26" />
+            <state relative-caret-position="315">
+              <caret line="166" column="40" lean-forward="true" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
               <folding>
                 <element signature="n#!!block;n#mostCommonElements#0" />
               </folding>
@@ -139,6 +139,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="622" y="23" width="818" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -172,8 +173,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Euler84.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="155" column="26" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="26" />
+        <state relative-caret-position="315">
+          <caret line="166" column="40" lean-forward="true" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
           <folding>
             <element signature="n#!!block;n#mostCommonElements#0" />
           </folding>
