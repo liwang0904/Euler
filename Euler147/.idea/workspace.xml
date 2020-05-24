@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce25e68a-422a-41f4-8297-541ad261770a" name="Default Changelist" comment="" />
+    <list default="true" id="962bc120-bd43-4971-9b22-6fc7859b04bb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,26 +13,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Euler146.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Euler77/src/Euler77.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" selection-start-line="69" selection-end-line="78" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,9 +24,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(num * num)</find>
-      <find>1601</find>
-      <find>8101</find>
+      <find>columns</find>
+      <find>rows</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -54,7 +34,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Euler146.kt" />
+        <option value="$PROJECT_DIR$/src/Euler147.kt" />
       </list>
     </option>
   </component>
@@ -70,19 +50,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Euler146" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Euler146" type="462c0819:PsiDirectoryNode" />
+              <item name="Euler147" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Euler147" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Course" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -103,14 +83,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Euler146Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="Euler146" />
+    <configuration name="Euler147Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Euler147" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Euler146Kt" />
+      <option name="MAIN_CLASS_NAME" value="Euler147Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,7 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Euler146Kt" />
+        <item itemvalue="Kotlin.Euler147Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -127,17 +107,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ce25e68a-422a-41f4-8297-541ad261770a" name="Default Changelist" comment="" />
-      <created>1589759748741</created>
+      <changelist id="962bc120-bd43-4971-9b22-6fc7859b04bb" name="Default Changelist" comment="" />
+      <created>1589839372604</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589759748741</updated>
+      <updated>1589839372604</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="741" y="23" width="699" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24961948" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -156,8 +135,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3299363" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -169,24 +148,10 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Euler70/src/Euler70.kt">
+    <entry file="file://$PROJECT_DIR$/src/Euler147.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" selection-start-line="37" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Euler146.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Euler77/src/Euler77.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" selection-start-line="69" selection-end-line="78" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
         </state>
       </provider>
     </entry>
